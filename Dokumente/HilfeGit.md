@@ -1,4 +1,4 @@
-# Git auf Manjaro nutzen: Ein Leitfaden für Terminal und VS Code
+H# Git auf Manjaro nutzen: Ein Leitfaden für Terminal und VS Code
 
 Dieser Leitfaden erklärt die Grundlagen der Git-Nutzung auf einem Manjaro-System, sowohl über die Kommandozeile als auch integriert in Visual Studio Code (VS Code). Git ermöglicht es dir, Änderungen an deinen Projekten zu verfolgen, zu verwalten und flexibel damit umzugehen.
 
@@ -99,7 +99,15 @@ git add ordnername/
 Erstelle einen Commit mit einer beschreibenden Nachricht:
 
 ```
+<<<<<<< HEAD
 git commit -m "Eine kurze Beschreibung der Änderungen"
+=======
+git commit -m "__ÄNDERUNG__"
+```
+
+```
+git commit -m "0.0.1"
+>>>>>>> 058544c (Doc-Upload)
 ```
 
 Die Commit-Nachricht sollte prägnant erklären, was in diesem Commit geändert wurde.
